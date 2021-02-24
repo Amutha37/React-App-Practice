@@ -1,13 +1,37 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Roboto Slab", serif;
+  display: column;
+  height: 100vh;
+  background-color: #e0e3e9;
+}
+.imagePopeye img {
+  width: 15rem;
+  height: 11rem;
+}
+.fullName {
+  text-align: center;
+  margin: 2rem 1rem;
+}
+.profileCard {
+  margin-top: 2rem;
+  margin-bottom: 20px;
+  width: 20rem;
+  border: 1px solid #000;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+p {
+  margin-top: 6px;
+}
+.profileData {
+  margin-top: 2rem;
+  text-align: left;
+  margin-left: 5px;
 }
