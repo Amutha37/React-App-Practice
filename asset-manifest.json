@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Amutha37/react-app-practice/static/css/main.549a33a9.chunk.css",
-    "main.js": "/Amutha37/react-app-practice/static/js/main.7cd10bed.chunk.js",
-    "main.js.map": "/Amutha37/react-app-practice/static/js/main.7cd10bed.chunk.js.map",
-    "runtime-main.js": "/Amutha37/react-app-practice/static/js/runtime-main.0fc6b084.js",
-    "runtime-main.js.map": "/Amutha37/react-app-practice/static/js/runtime-main.0fc6b084.js.map",
-    "static/js/2.2fcf2356.chunk.js": "/Amutha37/react-app-practice/static/js/2.2fcf2356.chunk.js",
-    "static/js/2.2fcf2356.chunk.js.map": "/Amutha37/react-app-practice/static/js/2.2fcf2356.chunk.js.map",
-    "static/js/3.2b62e7b3.chunk.js": "/Amutha37/react-app-practice/static/js/3.2b62e7b3.chunk.js",
-    "static/js/3.2b62e7b3.chunk.js.map": "/Amutha37/react-app-practice/static/js/3.2b62e7b3.chunk.js.map",
-    "index.html": "/Amutha37/react-app-practice/index.html",
-    "static/css/main.549a33a9.chunk.css.map": "/Amutha37/react-app-practice/static/css/main.549a33a9.chunk.css.map",
-    "static/js/2.2fcf2356.chunk.js.LICENSE.txt": "/Amutha37/react-app-practice/static/js/2.2fcf2356.chunk.js.LICENSE.txt"
+    "main.css": "/react-app-practice/static/css/main.549a33a9.chunk.css",
+    "main.js": "/react-app-practice/static/js/main.7cd10bed.chunk.js",
+    "main.js.map": "/react-app-practice/static/js/main.7cd10bed.chunk.js.map",
+    "runtime-main.js": "/react-app-practice/static/js/runtime-main.62870e31.js",
+    "runtime-main.js.map": "/react-app-practice/static/js/runtime-main.62870e31.js.map",
+    "static/js/2.2fcf2356.chunk.js": "/react-app-practice/static/js/2.2fcf2356.chunk.js",
+    "static/js/2.2fcf2356.chunk.js.map": "/react-app-practice/static/js/2.2fcf2356.chunk.js.map",
+    "static/js/3.2b62e7b3.chunk.js": "/react-app-practice/static/js/3.2b62e7b3.chunk.js",
+    "static/js/3.2b62e7b3.chunk.js.map": "/react-app-practice/static/js/3.2b62e7b3.chunk.js.map",
+    "index.html": "/react-app-practice/index.html",
+    "static/css/main.549a33a9.chunk.css.map": "/react-app-practice/static/css/main.549a33a9.chunk.css.map",
+    "static/js/2.2fcf2356.chunk.js.LICENSE.txt": "/react-app-practice/static/js/2.2fcf2356.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0fc6b084.js",
+    "static/js/runtime-main.62870e31.js",
     "static/js/2.2fcf2356.chunk.js",
     "static/css/main.549a33a9.chunk.css",
     "static/js/main.7cd10bed.chunk.js"
