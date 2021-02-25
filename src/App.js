@@ -8,7 +8,7 @@ export default function Card() {
     foodType: "Spinach",
     age: 44,
     likes: "Sailing the seas of React!",
-    twitterUsername: "popeyeTheSailor",
+    twitterUsername: "PopeyeTheSailor",
     avatar:
       "https://www.denofgeek.com/wp-content/uploads/2020/05/Popeye-Spinach-1.jpg?resize=768%2C432",
   };
