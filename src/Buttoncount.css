@@ -6,7 +6,9 @@
   text-align: center;
   color: #fff;
 }
-
+h1 {
+  color: #fff;
+}
 .count {
   background: none;
   color: #ffa260;
