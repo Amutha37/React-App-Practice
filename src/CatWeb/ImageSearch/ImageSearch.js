@@ -7,6 +7,7 @@ const ImageSearch = ({ handleGetRequest }) => {
     <div className="imageSearch">
       {/* <form onSubmit={handleGetRequest}  */}
       <form className="imageSearch__form">
+        <h2>Welcome to CAT WEB !</h2>
         <button
           className="imageDisplay"
           name="hats"
