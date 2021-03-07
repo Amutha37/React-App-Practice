@@ -1,6 +1,9 @@
 import "./Buttoncount.css";
 import Buttoncount from "./Buttoncount";
 
+import CatApp from "./CatWeb/CatApp";
+// import CatWeb from "./CatWeb";
+
 export default function Card() {
   const popeye = {
     name: "Popeye the Sailor",
@@ -15,6 +18,9 @@ export default function Card() {
 
   return (
     <div className="container">
+      <div>
+        <CatApp />
+      </div>
       <div className="profileCard">
         <div className="imagePopeye">
           <img src={popeye.avatar} alt="Popeye" />
@@ -29,6 +35,7 @@ export default function Card() {
           <p>Twitter: {popeye.twitterUsername}</p>
         </div>
       </div>
+
       <Buttoncount />
     </div>
   );
