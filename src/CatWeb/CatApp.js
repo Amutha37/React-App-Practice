@@ -37,6 +37,9 @@ class App extends React.Component {
       <div>
         <ImageSearch handleGetRequest={this.handleGetRequest} />
         <ImageList images={this.state.images} />
+        <div className="copyright">
+          <p>&copy;TheCatApi</p>
+        </div>
       </div>
     );
   }

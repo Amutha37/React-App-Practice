@@ -2,7 +2,7 @@ import React from "react";
 import "./ImageList.css";
 
 const ImageList = (props) => {
-  console.log(props);
+  // console.log(props);
 
   return (
     <div className="container">
