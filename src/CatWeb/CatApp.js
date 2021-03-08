@@ -3,6 +3,8 @@ import React from "react";
 import ImageSearch from "./ImageSearch/ImageSearch";
 import ImageList from "./ImageList/ImageList";
 
+import "./style.css";
+
 // const API_kEY = "ece29285-5438-43b3-9c7c-ad1fa09d9c29";
 
 class App extends React.Component {
@@ -37,9 +39,6 @@ class App extends React.Component {
       <div>
         <ImageSearch handleGetRequest={this.handleGetRequest} />
         <ImageList images={this.state.images} />
-        <div className="copyright">
-          <p>&copy;TheCatApi</p>
-        </div>
       </div>
     );
   }
