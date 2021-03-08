@@ -6,8 +6,9 @@ const ImageSearch = ({ handleGetRequest }) => {
   return (
     <div className="imageSearch">
       <h2>Welcome to CAT WEB !</h2>
-
-      <p>&copy;TheCatApi</p>
+      <div className="copyright">
+        <p>&copy;TheCatApi</p>
+      </div>
 
       <button
         className="imageDisplay"

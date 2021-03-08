@@ -10,6 +10,11 @@
   margin: 3rem;
   position: relative;
 }
+.copyright {
+  margin-top: 5px;
+  text-align: center;
+}
+
 .imageDisplay {
   margin: 1rem 1rem;
   color: #fff;
