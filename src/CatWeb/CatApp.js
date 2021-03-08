@@ -5,7 +5,7 @@ import ImageList from "./ImageList/ImageList";
 
 import "./style.css";
 
-// const API_kEY = "ece29285-5438-43b3-9c7c-ad1fa09d9c29";
+const API_kEY = "ece29285-5438-43b3-9c7c-ad1fa09d9c29";
 
 class App extends React.Component {
   state = {
@@ -16,9 +16,8 @@ class App extends React.Component {
     event.preventDefault();
 
     const catId = event.target.id;
-    // console.log(event.target.id);
 
-    const url = `https://api.thecatapi.com/v1/images/search?limit=5&category_ids=${catId}`;
+    const url = `https://api.thecatapi.com/v1/images/search?limit=5&category_ids=${catId}&api_key=${API_kEY}`;
 
     let myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -30,8 +29,7 @@ class App extends React.Component {
     };
     const request = await fetch(url, requestOptions);
     const response = await request.json();
-
-    this.setState({ images: response, catergories: response });
+    this.setState({ images: response });
   };
 
   render() {

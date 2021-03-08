@@ -8,7 +8,7 @@ body {
   font-family: "Roboto Slab", serif;
   display: column;
   height: 100vh;
-  background-color: #e0e3e9;
+  /* background-color: #fff; */
 }
 .imagePopeye img {
   width: 15rem;
