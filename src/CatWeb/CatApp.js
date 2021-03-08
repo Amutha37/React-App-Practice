@@ -36,7 +36,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="copyright">
+        <h3>Welcome to CAT WEB !</h3>
+
+        <p>&copy;TheCatApi</p>
+
         <ImageSearch handleGetRequest={this.handleGetRequest} />
         <ImageList images={this.state.images} />
       </div>

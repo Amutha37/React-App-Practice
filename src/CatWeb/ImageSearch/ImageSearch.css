@@ -7,7 +7,7 @@
 .imageSearch {
   width: 100%;
   text-align: center;
-  margin: 3rem;
+  margin: 3rem auto;
   position: relative;
 }
 .copyright {

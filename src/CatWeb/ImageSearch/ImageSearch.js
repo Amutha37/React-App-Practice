@@ -5,11 +5,6 @@ import "./ImageSearch.css";
 const ImageSearch = ({ handleGetRequest }) => {
   return (
     <div className="imageSearch">
-      <h2>Welcome to CAT WEB !</h2>
-      <div className="copyright">
-        <p>&copy;TheCatApi</p>
-      </div>
-
       <button
         className="imageDisplay"
         name="hats"
