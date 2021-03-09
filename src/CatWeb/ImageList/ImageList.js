@@ -11,7 +11,7 @@ const ImageList = (props) => {
           return (
             <div key={id} className="col-md-4" style={{ marginBottom: "2rem" }}>
               <div className="imageList__container">
-                <img className="imageList__image" src={url} alt="" />
+                <img className="imageList__image" src={url} alt="cats" />
               </div>
             </div>
           );
