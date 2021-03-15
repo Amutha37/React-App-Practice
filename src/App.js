@@ -1,42 +1,54 @@
-import "./Buttoncount.css";
-import Buttoncount from "./Buttoncount";
+import React, { useState } from "react";
+import ItemList from "./ItemList";
+import { produce, pantryItems, fruits } from "./storeItems";
+import "./styles.css";
+// get our fontawesome imports
+// import { fa-cart-plus } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaCartPlus } from "react-icons/fa";
 
-import CatApp from "./CatWeb/CatApp";
-// import CatWeb from "./CatWeb";
+export default function GroceryCart() {
+  // declare and initialize state
+  const [cart, setCart] = useState([]);
 
-export default function Card() {
-  const popeye = {
-    name: "Popeye the Sailor",
-    location: "Las Vegas",
-    foodType: "Spinach",
-    age: 44,
-    likes: "Sailing the seas of React!",
-    twitterUsername: "PopeyeTheSailor",
-    avatar:
-      "https://www.denofgeek.com/wp-content/uploads/2020/05/Popeye-Spinach-1.jpg?resize=768%2C432",
+  const addItem = (item) => {
+    setCart((prev) => {
+      return [item, ...prev];
+    });
+  };
+
+  const removeItem = (targetIndex) => {
+    setCart((prev) => {
+      // setCount(++count);
+      return prev.filter((item, index) => index !== targetIndex);
+    });
   };
 
   return (
-    <div className="container">
-      <div>
-        <CatApp />
-      </div>
-      <div className="profileCard">
-        <div className="imagePopeye">
-          <img src={popeye.avatar} alt="Popeye" />
-        </div>
+    <div className="displayItems">
+      <h1>Groceries</h1>
+      <h2>
+        Cart
+        <FaCartPlus color="red" size="2rem" />
+      </h2>
 
-        <div className="profileData">
-          <p className="fullName"> {popeye.name}</p>
-          <p>Location : {popeye.location}</p>
-          <p> Age : {popeye.age}</p>
-          <p>Food type: {popeye.foodType}</p>
-          <p>Likes: {popeye.likes}</p>
-          <p>Twitter: {popeye.twitterUsername}</p>
-        </div>
-      </div>
+      <ol>
+        {cart.map((item, index) => (
+          <li onClick={() => removeItem(index)} key={index}>
+            {item}
+          </li>
+        ))}
+      </ol>
+      <div className="itemOptions">
+        <h2>Vegetables</h2>
+        <ItemList items={produce} onItemClick={addItem} />
+        <h2>Fruits</h2>
 
-      <Buttoncount />
+        <ItemList items={fruits} onItemClick={addItem} />
+
+        <h2>Pantry Items</h2>
+        <ItemList items={pantryItems} onItemClick={addItem} />
+      </div>
     </div>
   );
 }

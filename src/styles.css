@@ -1,0 +1,27 @@
+button {
+  background-color: #09b9b18c;
+  color: rgb(14, 12, 12);
+  margin: 5px 5px;
+  padding: 3px 7px;
+  border-radius: 10px;
+  font-family: serif, "san-serif";
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+button .fruit {
+  background-color: #fff;
+}
+h1 {
+  color: blue;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.displayItems {
+  width: 30%;
+  margin: 0 auto;
+}
+.itemOptions {
+  width: 100%;
+}
