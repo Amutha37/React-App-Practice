@@ -1,42 +1,42 @@
-import "./Buttoncount.css";
-import Buttoncount from "./Buttoncount";
+import React, { useState } from "react";
+import NewTask from "./AddTask";
+import TasksList from "./TaskList";
+import "./styles.css";
 
-import CatApp from "./CatWeb/CatApp";
-// import CatWeb from "./CatWeb";
+export default function App() {
+  // hook your code up here ;)
+  const [newTask, setNewTask] = useState({});
 
-export default function Card() {
-  const popeye = {
-    name: "Popeye the Sailor",
-    location: "Las Vegas",
-    foodType: "Spinach",
-    age: 44,
-    likes: "Sailing the seas of React!",
-    twitterUsername: "PopeyeTheSailor",
-    avatar:
-      "https://www.denofgeek.com/wp-content/uploads/2020/05/Popeye-Spinach-1.jpg?resize=768%2C432",
+  const handleChange = ({ target }) => {
+    const { name, value } = target;
+    setNewTask((prev) => ({
+      ...prev,
+      [name]: value,
+      id: Date.now(),
+    }));
+  };
+
+  const [allTasks, setAllTasks] = useState([]);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (!newTask.title) return;
+    setAllTasks((prev) => [newTask, ...prev]);
+    setNewTask({});
+  };
+
+  const handleDelete = (taskIdToRemove) => {
+    setAllTasks((prev) => prev.filter((task) => task.id !== taskIdToRemove));
   };
 
   return (
-    <div className="container">
-      <div>
-        <CatApp />
-      </div>
-      <div className="profileCard">
-        <div className="imagePopeye">
-          <img src={popeye.avatar} alt="Popeye" />
-        </div>
-
-        <div className="profileData">
-          <p className="fullName"> {popeye.name}</p>
-          <p>Location : {popeye.location}</p>
-          <p> Age : {popeye.age}</p>
-          <p>Food type: {popeye.foodType}</p>
-          <p>Likes: {popeye.likes}</p>
-          <p>Twitter: {popeye.twitterUsername}</p>
-        </div>
-      </div>
-
-      <Buttoncount />
-    </div>
+    <main>
+      <h1>Tasks</h1>
+      <NewTask
+        newTask={newTask}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+      />
+      <TasksList allTasks={allTasks} handleDelete={handleDelete} />
+    </main>
   );
 }
