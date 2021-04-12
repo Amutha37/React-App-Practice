@@ -1,43 +1,38 @@
-import "./Buttoncount.css";
+import Navbar from "./Navbar";
 import Buttoncount from "./Buttoncount";
-
+import BackGroundColor from "./BackGroundColor";
 import CatApp from "./CatWeb/CatApp";
 
+import Card from "./Card";
 // Adding router
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-export default function Card() {
-  const popeye = {
-    name: "Popeye the Sailor",
-    location: "Las Vegas",
-    foodType: "Spinach",
-    age: 44,
-    likes: "Sailing the seas of React!",
-    twitterUsername: "PopeyeTheSailor",
-    avatar:
-      "https://www.denofgeek.com/wp-content/uploads/2020/05/Popeye-Spinach-1.jpg?resize=768%2C432",
-  };
-
+function App() {
   return (
-    <div className="container">
-      <div>
-        <CatApp />
-      </div>
-      <div className="profileCard">
-        <div className="imagePopeye">
-          <img src={popeye.avatar} alt="Popeye" />
-        </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <Card />
+            </Route>
+            <Route exact path="/buttoncount">
+              <Buttoncount />
+            </Route>
+            <Route exact path="/catapp">
+              <CatApp />
+            </Route>
+            <Route path="/backgroundcolor">
+              <BackGroundColor />
+            </Route>
+          </Switch>
 
-        <div className="profileData">
-          <p className="fullName"> {popeye.name}</p>
-          <p>Location : {popeye.location}</p>
-          <p> Age : {popeye.age}</p>
-          <p>Food type: {popeye.foodType}</p>
-          <p>Likes: {popeye.likes}</p>
-          <p>Twitter: {popeye.twitterUsername}</p>
+          {/* <CatApp />  */}
         </div>
       </div>
-
-      <Buttoncount />
-    </div>
+    </Router>
   );
 }
+
+export default App;

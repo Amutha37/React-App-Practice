@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+.imagePopeye img {
+  width: 15rem;
+  height: 11rem;
+}
+ul li {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+.fullName {
+  text-align: center;
+  margin: 2rem 1rem;
+}
+.profileCard {
+  margin-top: 2rem;
+  /* margin-left: 10rem; */
+  width: 20rem;
+  border: 4px solid rgb(17, 129, 51);
+  margin: 7rem auto;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+/* p {
+    margin-top: 6px;
+  } */
+.profileData {
+  margin-top: 2rem;
+  text-align: left;
+  margin-left: 5px;
+}
