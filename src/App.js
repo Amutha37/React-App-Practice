@@ -5,6 +5,7 @@ import CatApp from "./CatWeb/CatApp";
 
 import Card from "./Card";
 // Adding router
+// import { BrowserRouter as Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
             <Route exact path="/catapp">
               <CatApp />
             </Route>
-            <Route path="/backgroundcolor">
+            <Route exact path="/backgroundcolor">
               <BackGroundColor />
             </Route>
           </Switch>

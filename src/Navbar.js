@@ -13,11 +13,11 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link to="./catapp">Cat Api</Link>
+            <Link to="/catapp">Cat Api</Link>
           </li>
 
           <li>
-            <Link to="/buttoncount">Button Counter</Link>
+            <Link to="/buttoncount"> Counter</Link>
           </li>
           <li>
             <Link to="/backgroundcolor">Change color</Link>
