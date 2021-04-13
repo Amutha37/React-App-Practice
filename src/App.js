@@ -15,17 +15,18 @@ function App() {
         <Navbar />
         <div className="content">
           <Switch>
-            <Route exact path="/">
-              <Card />
-            </Route>
-            <Route exact path="/buttoncount">
-              <Buttoncount />
-            </Route>
             <Route exact path="/catapp">
               <CatApp />
             </Route>
+
+            <Route exact path="/buttoncount">
+              <Buttoncount />
+            </Route>
             <Route exact path="/backgroundcolor">
               <BackGroundColor />
+            </Route>
+            <Route exact path="/">
+              <Card />
             </Route>
           </Switch>
 
