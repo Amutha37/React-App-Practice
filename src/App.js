@@ -24,7 +24,7 @@ function App() {
             <Route exact path="/catapp">
               <CatApp />
             </Route>
-            <Route exact path="/backgroundcolor">
+            <Route path="/backgroundcolor">
               <BackGroundColor />
             </Route>
           </Switch>
