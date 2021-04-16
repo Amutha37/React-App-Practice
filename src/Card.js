@@ -14,6 +14,12 @@ export default function Card() {
 
   return (
     <div className="container">
+      <p>
+        Welcome to my react practice tasks. Kindly click the task on the
+        navigation bar to view my work.
+      </p>
+      {/* <br></br> */}
+      {/* <p>This is Popeye card details are from object.</p> */}
       <div className="profileCard">
         <div className="imagePopeye">
           <img src={popeye.avatar} alt="Popeye" />

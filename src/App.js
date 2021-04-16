@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import Buttoncount from "./Buttoncount";
 import BackGroundColor from "./BackGroundColor";
 import CatApp from "./CatWeb/CatApp";
-
+import LetterCount from "./LetterCount/AppLet";
 import Card from "./Card";
 // Adding router
 // import { BrowserRouter as Switch, Route } from "react-router-dom";
@@ -20,17 +20,6 @@ function App() {
         <Navbar />
         <div className="content">
           <Switch>
-            {/* <Redirect exact to="/home" /> */}
-
-            {/* <Route exact path="/" >
-              
-            </Route> */}
-            {/* <Route exact path={["/", "/home"]}>
-              <Card />
-            </Route> */}
-            {/* <Route exact path="/home">
-              <Card /> */}
-            {/* </Route> */}
             <Route exact path="/catapp">
               <CatApp />
             </Route>
@@ -40,6 +29,10 @@ function App() {
             <Route exact path="/backgroundcolor">
               <BackGroundColor />
             </Route>
+            <Route exact path="/lettercount">
+              <LetterCount />
+            </Route>
+
             <Route>
               <Redirect exact from="/" to="/home" />
               <Route exact path="/home">

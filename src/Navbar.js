@@ -22,6 +22,9 @@ const Navbar = () => {
           <li>
             <Link to="/backgroundcolor">Change color</Link>
           </li>
+          <li>
+            <Link to="/lettercount">Count letter</Link>
+          </li>
         </ul>
       </div>
     </nav>
