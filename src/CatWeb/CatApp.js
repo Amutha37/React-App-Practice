@@ -5,7 +5,6 @@ import ImageList from "./ImageList/ImageList";
 
 import "./style.css";
 
-// const API_kEY = "ece29285-5438-43b3-9c7c-ad1fa09d9c29";
 const urlSearch = "https://api.thecatapi.com/v1/images/search";
 
 class App extends React.Component {
