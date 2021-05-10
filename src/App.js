@@ -8,9 +8,7 @@ import AppToggle from "./Toggle/AppToggle";
 import CopyCat from "./Copycat/CopyCatApp";
 import Guineapig from "./Guinea/Guineaapp";
 import Card from "./Card";
-// import "./Toggle/stylestoggle.css";
-// Adding router
-// import { BrowserRouter as Switch, Route } from "react-router-dom";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -54,8 +52,6 @@ function App() {
               </Route>
             </Route>
           </Switch>
-
-          {/* <CatApp />  */}
         </div>
       </div>
     </Router>
