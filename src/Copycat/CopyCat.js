@@ -1,3 +1,4 @@
+// this project is from codecademy guided project
 import React from "react";
 import { styles } from "./copycatstyles";
 

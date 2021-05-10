@@ -8,8 +8,8 @@ export default function AppToggle() {
     <div className="Appp">
       <h1>Toggle using components</h1>
 
-      <Room />
       <RandomColor />
+      <Room />
       <Press />
     </div>
   );
