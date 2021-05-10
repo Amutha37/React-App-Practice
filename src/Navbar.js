@@ -31,6 +31,9 @@ const Navbar = () => {
           <li>
             <Link to="/copycat">Copy Cat</Link>
           </li>
+          <li>
+            <Link to="/guineapig">GuineaPigs</Link>
+          </li>
         </ul>
       </div>
     </nav>

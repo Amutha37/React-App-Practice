@@ -6,6 +6,7 @@ import CatApp from "./CatWeb/CatApp";
 import LetterCount from "./LetterCount/AppLet";
 import AppToggle from "./Toggle/AppToggle";
 import CopyCat from "./Copycat/CopyCatApp";
+import Guineapig from "./Guinea/Guineaapp";
 import Card from "./Card";
 // import "./Toggle/stylestoggle.css";
 // Adding router
@@ -41,6 +42,9 @@ function App() {
             </Route>
             <Route exact path="/copycat">
               <CopyCat />
+            </Route>
+            <Route exact path="/guineapig">
+              <Guineapig />
             </Route>
             {/* exclude for  home button  */}
             <Route>
