@@ -2,8 +2,12 @@ import Navbar from "./Navbar";
 import Buttoncount from "./Buttoncount";
 import BackGroundColor from "./BackGroundColor";
 import CatApp from "./CatWeb/CatApp";
+
 import LetterCount from "./LetterCount/AppLet";
+import AppToggle from "./Toggle/AppToggle";
+import CopyCat from "./Copycat/CopyCatApp";
 import Card from "./Card";
+// import "./Toggle/stylestoggle.css";
 // Adding router
 // import { BrowserRouter as Switch, Route } from "react-router-dom";
 import {
@@ -32,7 +36,13 @@ function App() {
             <Route exact path="/lettercount">
               <LetterCount />
             </Route>
-
+            <Route exact path="/toggleapp">
+              <AppToggle />
+            </Route>
+            <Route exact path="/copycat">
+              <CopyCat />
+            </Route>
+            {/* exclude for  home button  */}
             <Route>
               <Redirect exact from="/" to="/home" />
               <Route exact path="/home">

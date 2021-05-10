@@ -28,10 +28,11 @@ body {
   padding: 1rem 1rem;
 }
 p {
-  margin-top: 6px;
+  margin-top: 7px;
 }
 .profileData {
   margin-top: 2rem;
   text-align: left;
   margin-left: 5px;
 }
+/* Styles for Toggling components */

@@ -25,6 +25,12 @@ const Navbar = () => {
           <li>
             <Link to="/lettercount">Count letter</Link>
           </li>
+          <li>
+            <Link to="/toggleapp">Toggling</Link>
+          </li>
+          <li>
+            <Link to="/copycat">Copy Cat</Link>
+          </li>
         </ul>
       </div>
     </nav>

@@ -1,0 +1,41 @@
+.room {
+  margin-left: 38rem;
+}
+.room button {
+  background-color: rgb(190, 225, 143);
+  border-radius: 50%;
+}
+.press {
+  margin: auto 0;
+}
+.press button {
+  margin-top: 4rem;
+  margin-left: 35rem;
+  width: 12rem;
+  background-color: rgb(190, 225, 143);
+  border-radius: 5rem;
+}
+
+.press button:focus {
+  border-color: #00006d;
+}
+
+.press button:hover {
+  background-color: rgb(82, 189, 96);
+}
+
+.press button:active {
+  background-color: #00006d;
+}
+
+.textColor {
+  margin-top: 5rem;
+  margin-left: 25rem;
+  font-family: serif;
+}
+
+.press p {
+  margin-top: 1rem;
+  margin-left: 32rem;
+  font-size: 2rem;
+}
