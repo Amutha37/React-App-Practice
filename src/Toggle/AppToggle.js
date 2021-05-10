@@ -6,7 +6,7 @@ import "./stylestoggle.css";
 export default function AppToggle() {
   return (
     <div className="Appp">
-      <h1>Toggle using components</h1>
+      {/* <h1>Toggle using components</h1> */}
 
       <RandomColor />
       <Room />
