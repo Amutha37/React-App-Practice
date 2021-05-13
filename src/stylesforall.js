@@ -102,10 +102,15 @@ const buttonpresswidth = `15rem`;
 const buttonpressmarginLeft = `32rem`;
 // p tag in class app
 const buttonpresspmarginLeft = `32rem`;
-
+const buttononhover = "#ff7375;";
+// border-bottom: 4px solid #c24648;
+const buttononhoverStyle = {
+  backgroundColor: buttononhover,
+};
 const buttonpressStyle = {
   transitionDuration: buttonpresstransitionDuration,
   backgroundColor: buttonpressbackgroundColor,
+
   borderRadius: buttonpressborderRadius,
   padding: buttonpresspadding,
   fontFamily: buttonpressfontFamily,
@@ -121,6 +126,7 @@ const buttonpresspStyle = {
 export const buttonpressstyle = {
   buttonpressStyle: buttonpressStyle,
   buttonpresspStyle: buttonpresspStyle,
+  buttononhoverStyle: buttononhoverStyle,
 };
 
 // class app styles
