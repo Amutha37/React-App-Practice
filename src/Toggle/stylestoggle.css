@@ -8,13 +8,6 @@
 .press {
   margin: auto 0;
 }
-.press button {
-  margin-top: 4rem;
-  margin-left: 35rem;
-  width: 12rem;
-  background-color: rgb(190, 225, 143);
-  border-radius: 5rem;
-}
 
 .press button:focus {
   border-color: #00006d;
@@ -33,7 +26,9 @@
   margin-left: 25rem;
   font-family: serif;
 }
-
+.textColor h1 {
+  width: 10rem;
+}
 .press p {
   margin-top: 1rem;
   margin-left: 32rem;
@@ -41,4 +36,5 @@
 }
 .toggleapp {
   margin-left: 7rem;
+  display: flex;
 }

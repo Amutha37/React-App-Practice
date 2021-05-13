@@ -7,6 +7,7 @@ import LetterCount from "./LetterCount/AppLet";
 import AppToggle from "./Toggle/AppToggle";
 import CopyCat from "./Copycat/CopyCatApp";
 import Guineapig from "./Guinea/Guineaapp";
+import Classapp from "./Classcomponents/Classapp";
 import Card from "./Card";
 
 import {
@@ -43,6 +44,9 @@ function App() {
             </Route>
             <Route exact path="/guineapig">
               <Guineapig />
+            </Route>
+            <Route exact path="/classapp">
+              <Classapp />
             </Route>
             {/* exclude for  home button  */}
             <Route>

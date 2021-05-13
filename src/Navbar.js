@@ -34,6 +34,9 @@ const Navbar = () => {
           <li>
             <Link to="/guineapig">GuineaPigs</Link>
           </li>
+          <li>
+            <Link to="/classapp"> Class Apps</Link>
+          </li>
         </ul>
       </div>
     </nav>

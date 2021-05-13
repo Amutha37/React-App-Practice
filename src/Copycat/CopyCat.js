@@ -1,6 +1,6 @@
 // this project is from codecademy guided project
 import React from "react";
-import { styles } from "./copycatstyles";
+import { copycatstyles } from "../stylesforall";
 
 // presentational component
 const images = {
@@ -21,16 +21,21 @@ export class CopyCat extends React.Component {
     const { copying, toggleTape, value, handleChange } = this.props;
 
     return (
-      <div style={styles.divStyles}>
+      <div style={copycatstyles.copycatdivStyles}>
         <h1 style={{ marginBottom: 80 }}>Copy Cat</h1>
-        <input type="text" value={value} onChange={handleChange} />
+        <input
+          style={copycatstyles.copycatinputStyles}
+          type="text"
+          value={value}
+          onChange={handleChange}
+        />
         <img
-          style={styles.imgStyles}
+          style={copycatstyles.copycatimgStyles}
           alt="cat"
           src={copying ? images.copycat : images.quietcat}
           onClick={toggleTape}
         />
-        <p>{copying && value}</p>
+        <p style={copycatstyles.copycatpStyles}>{copying && value}</p>
       </div>
     );
   }

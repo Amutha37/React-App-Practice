@@ -1,15 +1,22 @@
-// import "./styles.css";
 import React, { useState } from "react";
+// import { togglepressstyles } from "../stylesforall";
+import { buttonpressstyle } from "../stylesforall";
 
 export default function Press() {
   const [isPress, setPress] = useState(true);
   return (
-    <div className="press">
-      <button id="secret-button" onClick={() => setPress(!isPress)}>
+    <div>
+      <button
+        style={buttonpressstyle.buttonpressStyle}
+        onClick={() => setPress(!isPress)}
+      >
         {" "}
         Press me... if you dare{" "}
       </button>
-      <p className="secret-message"> {!isPress ? "Modules are fancy!" : " "}</p>
+      <p style={buttonpressstyle.buttonpresspStyle}>
+        {" "}
+        {!isPress ? "Modules are fancy!" : " "}
+      </p>
     </div>
   );
 }

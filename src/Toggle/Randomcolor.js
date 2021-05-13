@@ -1,5 +1,6 @@
 // import "./styles.css";
 import React, { useState, useEffect } from "react";
+import { randomcolorstyles } from "../stylesforall";
 
 export default function RandomColor() {
   const [iscolor, setColor] = useState("");
@@ -20,9 +21,14 @@ export default function RandomColor() {
   }, []);
 
   return (
-    <main className="textColor">
+    <main className="textColor" style={randomcolorstyles.randomcolordivStyles}>
       <p> Setinterval.</p>
-      <h1 style={{ color: iscolor }}>I change color every 3 seconds.</h1>
+      <h1
+        // style={randomcolorstyles.randomcolorh1Styles}
+        style={{ color: iscolor, ...randomcolorstyles.randomcolorh1Styles }}
+      >
+        I change color every 3 seconds.
+      </h1>
     </main>
   );
 }
